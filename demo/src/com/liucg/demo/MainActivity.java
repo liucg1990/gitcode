@@ -13,6 +13,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		Intent intent =new Intent(this, PlayerActivity.class);
 		startActivity(intent);
+		finish();
 	}
 
 }

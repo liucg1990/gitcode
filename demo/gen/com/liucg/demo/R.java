@@ -30,6 +30,7 @@ public final class R {
     public static final class id {
         public static final int content=0x7f090000;
         public static final int loading_spinner=0x7f090001;
+        public static final int textview_player_tip=0x7f090002;
     }
     public static final class integer {
         public static final int card_flip_time_full=0x7f060000;
