@@ -22,7 +22,7 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class PlayerActivity extends Activity implements OnCompletionListener,OnPreparedListener,OnTimedTextListener{
+public class PlayerActivity extends Activity implements OnCompletionListener,OnPreparedListener{
 	private MediaPlayer mp = new MediaPlayer();
 	private TextView tipTextView;
 	private ArrayList<String> songArrayList;
@@ -36,7 +36,6 @@ public class PlayerActivity extends Activity implements OnCompletionListener,OnP
 		tipTextView  = (TextView) findViewById(R.id.textview_player_tip);
 		mp.setOnPreparedListener(this);
 		mp.setOnCompletionListener(this);
-		mp.setOnTimedTextListener(this);
 		songTimer = new Timer();
 		songArrayList = new Utility().scanFiles(Environment.getExternalStorageDirectory().getAbsolutePath()+"/qqmusic/song");
 		Log.i("files",songArrayList.toString());
@@ -105,10 +104,6 @@ public class PlayerActivity extends Activity implements OnCompletionListener,OnP
 		mp = null;
 	}
 
-	@Override
-	public void onTimedText(MediaPlayer mp, TimedText text) {
-		Toast.makeText(this, text.getText(), Toast.LENGTH_SHORT).show();
-	}
 	
 	private Handler songHandler = new Handler(){
 
