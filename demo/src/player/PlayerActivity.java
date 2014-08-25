@@ -43,7 +43,7 @@ public class PlayerActivity extends Activity implements OnCompletionListener,OnP
 		songTimer.schedule(songTask, 0, 1000);
 		//develop
 		//test
-		//test zhongwen
+		//test 中文
 	}
 
 	@Override
