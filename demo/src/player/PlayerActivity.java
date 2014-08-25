@@ -1,4 +1,4 @@
-package player;
+﻿package player;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -45,6 +45,7 @@ public class PlayerActivity extends Activity implements OnCompletionListener,OnP
 		//test
 		//test 中文
 		//test 1551 1
+		//test 1551 2
 		//test develop 1
 	}
 

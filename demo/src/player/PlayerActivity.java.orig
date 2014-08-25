@@ -1,4 +1,4 @@
-﻿package player;
+package player;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -42,10 +42,14 @@ public class PlayerActivity extends Activity implements OnCompletionListener,OnP
 		playMusic();
 		songTimer.schedule(songTask, 0, 1000);
 		//develop
-<<<<<<< HEAD
+		//test
 		//test 中文
+		//test 1551 1
+<<<<<<< HEAD
+		//test develop 1
 =======
->>>>>>> develop
+		//test 1551 2
+>>>>>>> develop1551
 	}
 
 	@Override
