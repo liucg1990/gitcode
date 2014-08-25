@@ -41,11 +41,8 @@ public class PlayerActivity extends Activity implements OnCompletionListener,OnP
 		Log.i("files",songArrayList.toString());
 		playMusic();
 		songTimer.schedule(songTask, 0, 1000);
-<<<<<<< HEAD
 		//develop
-=======
 		//test
->>>>>>> add test
 	}
 
 	@Override
